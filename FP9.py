@@ -25,7 +25,7 @@ def generate_completion():
     try:
         # Call OpenAI API to get the completion (Updated method using ChatCompletion)
         response = openai.chat.completions.create(
-            model="gpt-3.5-turbo",  # You can switch this to gpt-4 if you have access
+            model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=150
         )
